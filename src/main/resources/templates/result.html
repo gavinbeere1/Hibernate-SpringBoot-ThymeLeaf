@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Back up DB</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h3>Logged in</h3>
+	<h4>User: <h4 th:text="${username}" /> </h4>
+	
+	
+  <form action="#" th:action="@{/parsetracks}" method="post" th:object="${tracks}">
+       
+       <button type="submit" >Parse Tracks</button>
+    </form>
+ <form action="#" th:action="@{/parseplaylists}" method="post" th:object="${playlist}">
+       
+       <button type="submit" >Parse Playlists</button>
+    </form>
+
+	
+</body>
+</html>
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Back up DB</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<td>
+	<h3>Register</h3>
+	
+	<form action="#" th:action="@{/}" th:object="${user}" method="post">
+		<table>
+			<tr>
+				<td>Username:</td>
+				<td><input type="text" th:field="*{username}" /></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><input type="text" th:field="*{password}" /></td>
+			</tr>
+			<tr>
+				<td><button type="submit">Submit</button></td>
+			</tr>
+		</table>
+	</form>
+	</td>
+	<td>
+	
+	<h3>Login</h3>
+	<form action="#" th:action="@{/login}" th:object="${user}" method="post">
+		<table>
+			<tr>
+				<td>Username:</td>
+				<td><input type="text" th:field="*{username}" /></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><input type="text" th:field="*{password}" /></td>
+			</tr>
+			<tr>
+				<td><button type="submit">Submit</button></td>
+			</tr>
+		</table>
+	</form>
+	
+	</td>
+	
+</body>
+</html>
+
+
